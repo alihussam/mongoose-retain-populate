@@ -1,0 +1,50 @@
+{
+  "name": "mongoose-retain-populate",
+  "version": "0.0.1",
+  "description": "A Mongoose plugin that retains the original reference ID and populates documents in a separate field, ensuring seamless access to both.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "echo \"No tests specified\" && exit 0",
+    "clean": "rm -rf dist",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alihussam/mongoose-retain-populate.git"
+  },
+  "keywords": [
+    "mongoose",
+    "populate",
+    "mongodb",
+    "plugin",
+    "retain",
+    "reference",
+    "query"
+  ],
+  "author": "Ali Hussam <contact.alihussam@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alihussam/mongoose-retain-populate/issues"
+  },
+  "homepage": "https://github.com/alihussam/mongoose-retain-populate#readme",
+  "devDependencies": {
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^22.13.10",
+    "typescript": "^5.0.0",
+    "mongoose": "^8.12.1"
+  },
+  "peerDependencies": {
+    "mongoose": ">=6.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
